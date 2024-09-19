@@ -8,6 +8,12 @@ app.minsize(1200, 400)
 app.configure(bg="#141414")
 title_font = tkFont.Font(family="Helvetica", size=24, weight="bold")
 
+def on_ctrl_r(event):
+    confirm_reset()
+
+# Bind Ctrl+R to the confirm_reset function
+app.bind('<Control-r>', on_ctrl_r)
+
 def download_instructions():
     source = "instructions.txt"
     downloads_folder = os.path.join(os.path.expanduser("~"), "Downloads")
@@ -118,6 +124,7 @@ def confirm_reset():
     result = tkinter.messagebox.askyesno("Reset Confirmation", "Are you sure you want to reset the hot corner settings?")
     if result:
         Reset()
+       
 
 def Close():
     app.destroy()

@@ -12,3 +12,4 @@ import pygetwindow as gw
 import psutil
 import tkinter.font as tkFont
 import tkinter.messagebox
+import keyboard
