@@ -29,9 +29,10 @@ def cornerActions(action):
         subprocess.run(['powershell', '-command', COMMAND], shell=True, stdout=subprocess.PIPE, stderr=subprocess.PIPE)    
     elif action == 'Close Windows':
         print("Closing all windows")
+        close_all_windows() 
     elif action == 'Sleep':
         os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
-        close_all_windows()    
+           
 def top_left_corner():
     action = globals.topLeft.get()
     cornerActions(action)  

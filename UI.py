@@ -4,7 +4,7 @@ from packages import *
 app = Tk()
 app.title("Hot-Corners For Windows")
 app.geometry("800x600")
-app.minsize(600, 400)
+app.minsize(1200, 400)
 app.configure(bg="#141414")
 title_font = tkFont.Font(family="Helvetica", size=24, weight="bold")
 
