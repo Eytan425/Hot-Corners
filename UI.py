@@ -3,7 +3,7 @@ from packages import *
 
 app = Tk()
 app.title("Hot-Corners For Windows")
-app.geometry("800x600")
+# app.geometry("800x600")
 app.minsize(1200, 400)
 app.configure(bg="#141414")
 title_font = tkFont.Font(family="Helvetica", size=24, weight="bold")
@@ -25,6 +25,7 @@ downloadButton.pack(ipadx=10, ipady=10)
 
 globals.initialize_globals(app)
 
+#Placement
 windowWidth = 800
 windowHeight = 600
 positionRight = int(app.winfo_screenwidth() / 2 - windowWidth / 2)
@@ -51,10 +52,10 @@ labels = [
 ]
 
 option_menus = [
-    OptionMenu(frame, globals.topLeft, 'None', 'Lock PC', 'Minimize', 'Open Browser', 'File Explorer', 'Shut Down', 'Close Windows','Sleep'),
-    OptionMenu(frame, globals.topRight, 'None', 'Lock PC', 'Minimize', 'Open Browser', 'File Explorer', 'Shut Down', 'Close Windows', 'Sleep'),
-    OptionMenu(frame, globals.bottomLeft, 'None', 'Lock PC', 'Minimize', 'Open Browser', 'File Explorer', 'Shut Down', 'Close Windows', 'Sleep'),
-    OptionMenu(frame, globals.bottomRight, 'None', 'Lock PC', 'Minimize', 'Open Browser', 'File Explorer', 'Shut Down', 'Close Windows', 'Sleep')
+    OptionMenu(frame, globals.topLeft, 'None', 'Lock PC', 'Minimize', 'Open Browser', 'File Explorer', 'Shut Down', 'Close Windows','Sleep', 'Task Manager'),
+    OptionMenu(frame, globals.topRight, 'None', 'Lock PC', 'Minimize', 'Open Browser', 'File Explorer', 'Shut Down', 'Close Windows', 'Sleep', 'Task Manager'),
+    OptionMenu(frame, globals.bottomLeft, 'None', 'Lock PC', 'Minimize', 'Open Browser', 'File Explorer', 'Shut Down', 'Close Windows', 'Sleep', 'Task Manager'),
+    OptionMenu(frame, globals.bottomRight, 'None', 'Lock PC', 'Minimize', 'Open Browser', 'File Explorer', 'Shut Down', 'Close Windows', 'Sleep', 'Task Manager')
 ]
 
 # Configure the option menus

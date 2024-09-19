@@ -32,11 +32,13 @@ def cornerActions(action):
         close_all_windows() 
     elif action == 'Sleep':
         os.system("rundll32.exe powrprof.dll,SetSuspendState 0,1,0")
+    elif action == 'Task Manager':
+        print("Opening Task Manager")
+        os.system('taskmgr')    
            
 def top_left_corner():
     action = globals.topLeft.get()
     cornerActions(action)  
-
 
 def top_right_corner():
     action = globals.topRight.get()
