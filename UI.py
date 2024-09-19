@@ -23,6 +23,7 @@ def download_instructions():
     tkinter.messagebox.showinfo("Instructions download", f"Instructions downloaded to {destination}")
 downloadButton = Button(app, text="Click here for instructions", command=download_instructions, bg="#141414", fg="white")
 
+
 # Create the title label
 title = Label(app, text='Hot Corners!', font=title_font, bg="#141414", fg="white")
 title.pack(ipadx=10, ipady=10)
