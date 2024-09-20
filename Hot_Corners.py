@@ -4,9 +4,17 @@ from packages import *
 # Get the screen dimensions
 screen_width, screen_height = pyautogui.size()
 
-def close_all_windows():
-    os.system('taskkill /F /FI "IMAGENAME ne explorer.exe" /FI "WINDOWTITLE ne eq"')
 
+
+
+
+
+# Save all documents
+
+def close_all_windows():
+    
+    os.system('taskkill /F /FI "IMAGENAME ne explorer.exe" /FI "WINDOWTITLE ne eq"')
+    
 
 
 
