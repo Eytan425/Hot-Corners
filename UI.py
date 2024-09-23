@@ -2,7 +2,7 @@ from packages import *
 
 app = Tk()
 app.title("Hot-Corners For Windows")
-app.minsize(1200, 400)
+app.minsize(1400, 600)
 app.configure(bg="#141414")
 title_font = tkFont.Font(family="Helvetica", size=24, weight="bold")
 
@@ -32,9 +32,16 @@ globals.initialize_globals(app)
 # Placement
 windowWidth = 800
 windowHeight = 600
-positionRight = int(app.winfo_screenwidth() / 2 - windowWidth / 2)
-positionDown = int(app.winfo_screenheight() / 2 - windowHeight / 2)
+
+# Assuming a 13-inch laptop with a resolution of 1920x1080
+screenWidth = 1920
+screenHeight = 1080
+
+positionRight = int(screenWidth / 2 - windowWidth / 2)
+positionDown = int(screenHeight / 2 - windowHeight / 2)
+
 app.geometry(f"{windowWidth}x{windowHeight}+{positionRight}+{positionDown}")
+
 
 label_font_size = 14
 menu_font_size = 12
