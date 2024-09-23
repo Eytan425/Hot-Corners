@@ -5,19 +5,10 @@ from packages import *
 screen_width, screen_height = pyautogui.size()
 
 
-
-
-
-
-# Save all documents
-
 def close_all_windows():
     
     os.system('taskkill /F /FI "IMAGENAME ne explorer.exe" /FI "WINDOWTITLE ne eq"')
     
-
-
-
 
 def cornerActions(action):
     if action == 'Minimize':
