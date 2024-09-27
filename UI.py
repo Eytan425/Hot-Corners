@@ -8,8 +8,7 @@ title_font = tkFont.Font(family="Helvetica", size=24, weight="bold")
 
 def on_ctrl_r(event):
     confirm_reset()
-
-# Bind Ctrl+R to the confirm_reset function
+#Bind the button to the function
 app.bind('<Control-r>', on_ctrl_r)
 
 def download_instructions():
@@ -21,6 +20,7 @@ def download_instructions():
     tkinter.messagebox.showinfo("Instructions download", f"Instructions downloaded to {destination}")
 
 downloadButton = Button(app, text="Click here for instructions", command=download_instructions, bg="#141414", fg="white")
+
 
 # Create the title label
 title = Label(app, text='Hot Corners!', font=title_font, bg="#141414", fg="white")
@@ -113,6 +113,7 @@ def load_choices():
             bottom_right_button.config(text=globals.bottomRight.get())
     except FileNotFoundError:
         pass
+
 
 # Function to reset the corners and update the buttons
 def Reset():
