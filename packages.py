@@ -1,3 +1,6 @@
+#These are all the libraries I used in my programs
+
+
 from tkinter import *
 import globals
 import threading
@@ -13,3 +16,4 @@ import psutil
 import tkinter.font as tkFont
 import tkinter.messagebox
 import keyboard
+
